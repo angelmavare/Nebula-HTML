@@ -11747,6 +11747,10 @@ footer {
 
 footer .footer-section {
   min-height: 400px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  margin: 0;
 }
 
 footer .copyright-section {
@@ -11757,9 +11761,37 @@ footer .copyright-section {
 
 footer .line-gradient-footer {
   background: #bdbdbd;
+  background: linear-gradient(89.99deg, #2BAACD 0.01%, #487AC4 10.6%, #7641BF 20.4%, #AE69BF 39.9%, #E6446B 50.01%, #B8519E 55.65%, #763DBE 68.52%, #487AC4 87.91%, #2BAACD 99.99%);
+  background-size: 300% 100%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
   height: 12px;
   margin: 0;
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover;
+        background-position: center; */
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /*# sourceMappingURL=nebula.css.map */
