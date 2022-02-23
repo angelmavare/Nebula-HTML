@@ -6,8 +6,8 @@ Nebula is a pure HTML5 version build for Nebula Wordpress Theme / Pixonauta.com 
 
 ## Authors
 
-- [Ana Echeverría](https://www.behance.net/anaechever6739)
-- [Angel Mavare](https://github.com/angelmavare)
+- [Ana Echeverría](https://www.behance.net/anaechever6739) (Design)
+- [Angel Mavare](https://github.com/angelmavare) (Development)
 
 ## Screenshots
 
