@@ -115,3 +115,23 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
         }
     }
 }
+
+footer{
+    
+    background: $primary;
+    .footer-section{
+        min-height: 400px;
+    }
+    .copyright-section{
+        background: #fff;
+        min-height:65px;
+        margin: 0;
+    }
+    .line-gradient-footer{
+        background: rgb(189, 189, 189);
+        height:12px;
+        margin: 0;
+        background-size: cover;
+        background-position: center;
+    }
+}
