@@ -1,0 +1,117 @@
+/* 
+LEER ANTES DE EDITAR
+La contrucción de este archivo fue programada con Sass, por lo tanto es un compilado de archivos CSS como Bootstrap y estilos propios del sitio.
+Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y editar al final de estos para efectos de mantenimiento.
+*/
+
+
+@import "bootstrapcustom";
+@import "fonts";
+
+
+/**********************************
+            HEADER
+**********************************/
+.navbar-brand img{
+    max-width:150px;
+    vertical-align:sub;
+}
+
+.gradient-bg{
+    background-image: $gradient;
+    /* background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75); */
+    //background-size: 300% 100%;
+    background-size: 200% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.gradient-bg:hover{
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.banner{
+    margin-top: 30px;
+   
+    .container{
+        border-radius:10px;
+        .principal-card-row{
+            height: 60vh;
+            border-top-left-radius: 10px;
+            border-top-right-radius:10px;
+            .principal-card-text{
+                display: flex;
+                padding: 30px;
+                border-top-right-radius:10px;
+                justify-content: center;
+                .content-text{
+                    align-self: center;
+                    text-decoration: none;
+                }
+            }
+        }
+        .secondary-card-row{
+            height: 40vh;
+            
+            .secondary-card-text{
+                display: flex;
+                justify-content: center;
+                padding: 0;
+                .content-text{
+                    padding:15px;
+                    padding-bottom:30px;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+    
+
+}
+.post-feed{
+    .post-bottom-left img{
+        border-bottom-left-radius: 10px;
+
+    }
+    .post-bottom-right img{
+        border-bottom-right-radius:10px;
+    }
+    .post-top-left img{
+        border-top-left-radius:10px;
+    }
+    a{
+        display: block;
+        position: relative;
+        width: 100%;
+        padding: 66.25% 0 0 0;
+        overflow: hidden;
+        img{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        header{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        header.content-principal{
+            bottom: auto;
+            left: auto;
+        }
+    }
+}
