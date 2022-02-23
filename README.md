@@ -1,7 +1,10 @@
 
 # Nebula HTML5 Template
 
-Nebula is a pure HTML5 version build for Nebula Wordpress Theme / Pixonauta.com official theme 
+Nebula is a HTML5 version build for Nebula Wordpress Theme / Pixonauta.com official theme.
+This represents the 3rd version of the blog, in a fresher and more usable redesign to the previous [Uxtify theme](https://github.com/angelmavare/uxtify-theme).
+
+The template was build using Bootstrap 5 as framework and Sass as CSS preprocessor
 
 
 ## Authors
