@@ -11616,13 +11616,8 @@ fieldset:disabled .btn {
 }
 
 /**********************************
-            HEADER
+            GENERAL
 **********************************/
-.navbar-brand img {
-  max-width: 150px;
-  vertical-align: sub;
-}
-
 .gradient-bg {
   background-image: linear-gradient(79.18deg, #49A0CE -0.43%, #7C53BE 22.82%, #C45497 50.61%, #7C53BE 73.76%, #49A0CE 98.43%);
   background-size: 200% 100%;
@@ -11643,6 +11638,46 @@ fieldset:disabled .btn {
   moz-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+}
+
+.bg-gradient-animation {
+  background: #bdbdbd;
+  background: linear-gradient(89.99deg, #2BAACD 0.01%, #487AC4 10.6%, #7641BF 20.4%, #AE69BF 39.9%, #E6446B 50.01%, #B8519E 55.65%, #763DBE 68.52%, #487AC4 87.91%, #2BAACD 99.99%);
+  background-size: 300% 100%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/**********************************
+            HEADER
+**********************************/
+.navbar-brand img {
+  max-width: 150px;
+  vertical-align: sub;
 }
 
 .banner {
@@ -11698,14 +11733,9 @@ fieldset:disabled .btn {
       align-self: flex-end;
 }
 
-.bg-gradient-animation {
-  background: #bdbdbd;
-  background: linear-gradient(89.99deg, #2BAACD 0.01%, #487AC4 10.6%, #7641BF 20.4%, #AE69BF 39.9%, #E6446B 50.01%, #B8519E 55.65%, #763DBE 68.52%, #487AC4 87.91%, #2BAACD 99.99%);
-  background-size: 300% 100%;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
-}
-
+/**********************************
+            FEED
+**********************************/
 .title-section {
   background: #282729;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -11786,6 +11816,9 @@ fieldset:disabled .btn {
   left: auto;
 }
 
+/**********************************
+            FOOTER
+**********************************/
 footer {
   background: #753BBD;
 }
@@ -11824,29 +11857,5 @@ footer .line-gradient-footer {
   margin: 0;
   /* background-size: cover;
         background-position: center; */
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 /*# sourceMappingURL=nebula.css.map */

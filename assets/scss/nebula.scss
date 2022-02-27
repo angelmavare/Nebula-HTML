@@ -10,13 +10,8 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
 
 
 /**********************************
-            HEADER
+            GENERAL
 **********************************/
-.navbar-brand img{
-    max-width:150px;
-    vertical-align:sub;
-}
-
 .gradient-bg{
     background-image: $gradient;
     background-size: 200% 100%;
@@ -25,8 +20,6 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 
-
-   
     /* background-image: $gradient; 
     background-size: 300% 100%;
     moz-transition: all .4s ease-in-out;
@@ -42,6 +35,36 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
+
+.bg-gradient-animation{
+    background: rgb(189, 189, 189);
+    background: linear-gradient(89.99deg, #2BAACD 0.01%, #487AC4 10.6%, #7641BF 20.4%, #AE69BF 39.9%, #E6446B 50.01%, #B8519E 55.65%, #763DBE 68.52%, #487AC4 87.91%, #2BAACD 99.99%);
+    background-size: 300% 100%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/**********************************
+            HEADER
+**********************************/
+.navbar-brand img{
+    max-width:150px;
+    vertical-align:sub;
+}
+
+
+
 .banner{
     margin-top: 30px;
    
@@ -81,13 +104,10 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
 
 }
 
-.bg-gradient-animation{
-    background: rgb(189, 189, 189);
-    background: linear-gradient(89.99deg, #2BAACD 0.01%, #487AC4 10.6%, #7641BF 20.4%, #AE69BF 39.9%, #E6446B 50.01%, #B8519E 55.65%, #763DBE 68.52%, #487AC4 87.91%, #2BAACD 99.99%);
-    background-size: 300% 100%;
-    animation: gradient 15s ease infinite;
-}
 
+/**********************************
+            FEED
+**********************************/
 .title-section{
     background: #282729;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -158,6 +178,9 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     }
 }
 
+/**********************************
+            FOOTER
+**********************************/
 footer{
 
     
@@ -196,14 +219,3 @@ footer{
     
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
