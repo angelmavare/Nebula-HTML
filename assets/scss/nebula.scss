@@ -63,6 +63,40 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     vertical-align:sub;
 }
 
+.nebula-search{
+    background: transparent !important;
+    border-radius: 0px;
+    border-right: none;
+    color: white !important;
+    border-color: white;
+}
+.nebula-search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;;
+    opacity: 0.5; /* Firefox */
+  }
+.nebula-search:focus, .uxtify-search:active{
+    box-shadow: 0px 0px 4px #753BBD;
+    color: white;
+    outline: none;
+    border: none;
+    /* outline: 3px solid rgba(170, 50, 220, .6); */
+}
+
+.nebula-search-button{
+    border: 1px solid white;
+    border-left: none;
+    border-radius: 0;
+    background: transparent;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.focus-usb, .nebula-search-button:hover,.nebula-search-button:focus, .nebula-search-button:active{
+    background:#753BBD;
+    box-shadow: 0px 0px 4px #753BBD;
+    border: none !important;
+    
+    
+}
 
 
 .banner{
