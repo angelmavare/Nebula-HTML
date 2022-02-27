@@ -19,14 +19,21 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
 
 .gradient-bg{
     background-image: $gradient;
-    /* background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
-    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75); */
-    //background-size: 300% 100%;
     background-size: 200% 100%;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+
+
+   
+    /* background-image: $gradient; 
+    background-size: 300% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    animation: gradient 15s ease infinite; */
 }
 .gradient-bg:hover{
     background-position: 100% 0;
@@ -72,6 +79,13 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     }
     
 
+}
+
+.bg-gradient-animation{
+    background: rgb(189, 189, 189);
+    background: linear-gradient(89.99deg, #2BAACD 0.01%, #487AC4 10.6%, #7641BF 20.4%, #AE69BF 39.9%, #E6446B 50.01%, #B8519E 55.65%, #763DBE 68.52%, #487AC4 87.91%, #2BAACD 99.99%);
+    background-size: 300% 100%;
+    animation: gradient 15s ease infinite;
 }
 
 .title-section{
