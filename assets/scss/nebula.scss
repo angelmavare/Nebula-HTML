@@ -63,6 +63,14 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     top: 0;
 }
 
+.post-feed img{
+    transition: all 0.5s;
+}
+.post-feed:hover img{
+    width: 120%;
+    height: 120%;
+}
+
 /**********************************
             HEADER
 **********************************/
@@ -156,8 +164,10 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
             }
 
         }
+       
         .secondary-card-row{
             height: 40vh;
+            
             
             .secondary-card-text{
                 display: flex;
@@ -174,6 +184,8 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     
 
 }
+
+
 
 
 /**********************************

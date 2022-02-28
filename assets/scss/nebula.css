@@ -11681,6 +11681,16 @@ fieldset:disabled .btn {
   top: 0;
 }
 
+.post-feed img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.post-feed:hover img {
+  width: 120%;
+  height: 120%;
+}
+
 /**********************************
             HEADER
 **********************************/
