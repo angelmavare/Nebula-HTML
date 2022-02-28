@@ -53,7 +53,7 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
+  --bs-orange: #FF5300;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -11716,13 +11716,16 @@ fieldset:disabled .btn {
   /* Firefox */
 }
 
-.nebula-search:focus, .uxtify-search:active {
-  -webkit-box-shadow: 0px 0px 4px #753BBD;
-          box-shadow: 0px 0px 4px #753BBD;
+.nebula-search:focus, .nebula-search:active {
   color: white;
-  outline: none;
-  border: none;
+  outline: #FF5300;
+  border-color: #FF5300;
   /* outline: 3px solid rgba(170, 50, 220, .6); */
+}
+
+.nebula-search:focus + .nebula-search-button, .nebula-search:active + .nebula-search-button {
+  border: 1px solid #FF5300;
+  border-left: none;
 }
 
 .nebula-search-button {
@@ -11732,12 +11735,15 @@ fieldset:disabled .btn {
   background: transparent;
   padding-bottom: 0px;
   padding-top: 0px;
+  z-index: 10 !important;
+}
+
+.nebula-search-button i {
+  color: white;
 }
 
 .focus-usb, .nebula-search-button:hover, .nebula-search-button:focus, .nebula-search-button:active {
-  background: #753BBD;
-  -webkit-box-shadow: 0px 0px 4px #753BBD;
-          box-shadow: 0px 0px 4px #753BBD;
+  background: #FF5300;
   border: none !important;
 }
 

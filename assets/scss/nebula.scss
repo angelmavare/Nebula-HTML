@@ -74,12 +74,21 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     color: white;;
     opacity: 0.5; /* Firefox */
   }
-.nebula-search:focus, .uxtify-search:active{
-    box-shadow: 0px 0px 4px #753BBD;
+.nebula-search:focus, .nebula-search:active{
+    //box-shadow: 0px 0px 4px $orange;
+
     color: white;
-    outline: none;
-    border: none;
+    outline: $orange;
+    border-color: $orange;
+    //border: none;
     /* outline: 3px solid rgba(170, 50, 220, .6); */
+}
+.nebula-search:focus + .nebula-search-button, .nebula-search:active + .nebula-search-button{
+    //background:$orange;
+    //box-shadow: 0px 0px 4px $orange;
+    border: 1px solid $orange;
+    border-left: none;
+    //border: none !important;
 }
 
 .nebula-search-button{
@@ -89,10 +98,14 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     background: transparent;
     padding-bottom: 0px;
     padding-top: 0px;
+    z-index: 10 !important;
+    i{
+        color: white;
+    }
 }
 .focus-usb, .nebula-search-button:hover,.nebula-search-button:focus, .nebula-search-button:active{
-    background:#753BBD;
-    box-shadow: 0px 0px 4px #753BBD;
+    background:$orange;
+    //box-shadow: 0px 0px 4px $orange;
     border: none !important;
     
     
