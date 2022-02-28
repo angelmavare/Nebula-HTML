@@ -11691,6 +11691,28 @@ fieldset:disabled .btn {
   height: 120%;
 }
 
+.serif-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-gradient {
+  background: linear-gradient(79.18deg, #49A0CE -0.43%, #7C53BE 22.82%, #C45497 50.61%, #7C53BE 73.76%, #49A0CE 98.43%);
+  background-size: 300% 100%;
+  color: white;
+  font-weight: 500;
+  moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-gradient:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  color: white;
+}
+
 /**********************************
             HEADER
 **********************************/
@@ -11871,15 +11893,15 @@ fieldset:disabled .btn {
   padding-bottom: 5px;
 }
 
-.post-feed .post-bottom-left img {
+.post-feed .post-bottom-left, .post-feed .post-bottom-left img, .post-feed .post-bottom-left .overlay-bg {
   border-bottom-left-radius: 10px;
 }
 
-.post-feed .post-bottom-right img {
+.post-feed .post-bottom-right, .post-feed .post-bottom-right img, .post-feed .post-bottom-right .overlay-bg {
   border-bottom-right-radius: 10px;
 }
 
-.post-feed .post-top-left img {
+.post-feed .post-top-left img, .post-feed .post-top-left {
   border-top-left-radius: 10px;
 }
 
@@ -11917,6 +11939,36 @@ fieldset:disabled .btn {
 .post-feed a header.content-principal {
   bottom: auto;
   left: auto;
+}
+
+.horizontal-post-feed {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+}
+
+.horizontal-post-feed .post-img-link {
+  border-radius: 10px 10px 10px 10px;
+}
+
+.horizontal-post-feed img {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.horizontal-post-feed .card-title {
+  color: #000000;
+  text-decoration: none !important;
+}
+
+.horizontal-post-feed .card-text {
+  color: #000000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.horizontal-post-feed .link-text {
+  text-decoration: none;
 }
 
 /**********************************

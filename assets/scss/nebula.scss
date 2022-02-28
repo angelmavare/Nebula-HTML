@@ -70,6 +70,27 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     width: 120%;
     height: 120%;
 }
+.serif-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btn-gradient{
+    background: $gradient;
+    background-size: 300% 100%;
+    color: white;
+    font-weight: 500;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-gradient:hover{
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: white;
+}
 
 /**********************************
             HEADER
@@ -219,14 +240,15 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
 
 }
 .post-feed{
-    .post-bottom-left img{
+    
+    .post-bottom-left, .post-bottom-left img, .post-bottom-left .overlay-bg{
         border-bottom-left-radius: 10px;
 
     }
-    .post-bottom-right img{
+    .post-bottom-right, .post-bottom-right img, .post-bottom-right .overlay-bg{
         border-bottom-right-radius:10px;
     }
-    .post-top-left img{
+    .post-top-left img, .post-top-left{
         border-top-left-radius:10px;
     }
     a{
@@ -258,6 +280,30 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
             bottom: auto;
             left: auto;
         }
+    }
+}
+
+.horizontal-post-feed{
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    .post-img-link{
+        border-radius: 10px 10px 10px 10px;
+    }
+    img{
+        border-radius: 5px 0px 0px 5px;
+    }
+    .card-title{
+        color: #000000;
+        text-decoration: none !important;
+    }
+    .card-text{
+        color: #000000;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .link-text{
+        text-decoration: none;
     }
 }
 
