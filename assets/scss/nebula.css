@@ -11953,7 +11953,7 @@ fieldset:disabled .btn {
   border-radius: 10px 10px 10px 10px;
 }
 
-.horizontal-post-feed img {
+.horizontal-post-feed img.post-img {
   border-radius: 5px 0px 0px 5px;
 }
 
@@ -11969,6 +11969,25 @@ fieldset:disabled .btn {
 
 .horizontal-post-feed .link-text {
   text-decoration: none;
+}
+
+.ux-profile-sm {
+  width: 30px;
+  border-radius: 50px;
+}
+
+.link-profile {
+  color: #000000;
+  font-weight: 700;
+}
+
+.link-profile:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.ux-post-editor {
+  color: #000000;
 }
 
 /**********************************

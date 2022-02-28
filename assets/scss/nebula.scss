@@ -291,7 +291,7 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     .post-img-link{
         border-radius: 10px 10px 10px 10px;
     }
-    img{
+    img.post-img{
         border-radius: 5px 0px 0px 5px;
     }
     .card-title{
@@ -304,7 +304,24 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
     }
     .link-text{
         text-decoration: none;
+
     }
+}
+.ux-profile-sm{
+    width: 30px;
+    border-radius: 50px;
+}
+.link-profile{
+    color: #000000;
+    font-weight: 700;
+}
+.link-profile:hover{
+    text-decoration: none;
+    color: #000000;
+}
+.ux-post-editor{
+    color: #000000;
+
 }
 
 /**********************************
