@@ -11672,6 +11672,15 @@ fieldset:disabled .btn {
   }
 }
 
+.overlay-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 80, 145, 0)), to(#753BBD));
+  background: linear-gradient(180deg, rgba(190, 80, 145, 0) 0%, #753BBD 100%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
 /**********************************
             HEADER
 **********************************/
@@ -11777,6 +11786,23 @@ fieldset:disabled .btn {
       -ms-grid-row-align: center;
       align-self: center;
   text-decoration: none;
+}
+
+.banner .container .principal-card-row .principal-card-img img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.banner .container .principal-card-row:hover > .principal-card-img img {
+  width: 120%;
+  height: 120%;
+}
+
+.banner .container .principal-card-row:hover > .principal-card-text {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .banner .container .secondary-card-row {

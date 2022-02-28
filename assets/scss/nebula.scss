@@ -54,6 +54,14 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
         background-position: 0% 50%;
     }
 }
+.overlay-bg{
+    //background:rgba(0,0,0,0.5); 
+    background: linear-gradient(180deg, rgba(190, 80, 145, 0) 0%, #753BBD 100%);
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
 
 /**********************************
             HEADER
@@ -117,6 +125,7 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
    
     .container{
         border-radius:10px;
+
         .principal-card-row{
             height: 60vh;
             border-top-left-radius: 10px;
@@ -131,6 +140,21 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
                     text-decoration: none;
                 }
             }
+            .principal-card-img img{
+                transition: all 0.5s;
+            }
+            &:hover > .principal-card-img img{
+                width: 120%;
+                height: 120%;
+            }
+            &:hover > .principal-card-text{
+                background-position: 100% 0;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+
         }
         .secondary-card-row{
             height: 40vh;
