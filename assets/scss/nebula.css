@@ -11713,6 +11713,10 @@ fieldset:disabled .btn {
   color: white;
 }
 
+.link-text {
+  text-decoration: none;
+}
+
 /**********************************
             HEADER
 **********************************/
@@ -11792,12 +11796,18 @@ fieldset:disabled .btn {
   margin-top: 30px;
 }
 
+@media (max-width: 768px) {
+  .banner {
+    margin-top: 0;
+  }
+}
+
 .banner .container {
   border-radius: 10px;
 }
 
 .banner .container .principal-card-row {
-  height: 60vh;
+  min-height: 60vh;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -11838,7 +11848,7 @@ fieldset:disabled .btn {
 }
 
 .banner .container .secondary-card-row {
-  height: 40vh;
+  min-height: 40vh;
 }
 
 .banner .container .secondary-card-row .secondary-card-text {
@@ -11897,12 +11907,30 @@ fieldset:disabled .btn {
   border-bottom-left-radius: 10px;
 }
 
+@media (max-width: 768px) {
+  .post-feed .post-bottom-left, .post-feed .post-bottom-left img, .post-feed .post-bottom-left .overlay-bg {
+    border-bottom-left-radius: 0px;
+  }
+}
+
 .post-feed .post-bottom-right, .post-feed .post-bottom-right img, .post-feed .post-bottom-right .overlay-bg {
   border-bottom-right-radius: 10px;
 }
 
+@media (max-width: 768px) {
+  .post-feed .post-bottom-right, .post-feed .post-bottom-right img, .post-feed .post-bottom-right .overlay-bg {
+    border-bottom-right-radius: 0px;
+  }
+}
+
 .post-feed .post-top-left img, .post-feed .post-top-left {
   border-top-left-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .post-feed .post-top-left img, .post-feed .post-top-left {
+    border-top-left-radius: 0px;
+  }
 }
 
 .post-feed a {
@@ -11939,6 +11967,7 @@ fieldset:disabled .btn {
 .post-feed a header.content-principal {
   bottom: auto;
   left: auto;
+  position: relative;
 }
 
 .horizontal-post-feed {
@@ -11957,6 +11986,12 @@ fieldset:disabled .btn {
   border-radius: 5px 0px 0px 5px;
 }
 
+@media (max-width: 768px) {
+  .horizontal-post-feed img.post-img {
+    border-radius: 0px 0px 0px 0px;
+  }
+}
+
 .horizontal-post-feed .card-title {
   color: #000000;
   text-decoration: none !important;
@@ -11965,10 +12000,6 @@ fieldset:disabled .btn {
 .horizontal-post-feed .card-text {
   color: #000000;
   font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.horizontal-post-feed .link-text {
-  text-decoration: none;
 }
 
 .ux-profile-sm {
@@ -12039,9 +12070,31 @@ footer .nav-item {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  footer .nav-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 footer .right-footer-nav {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+}
+
+@media (max-width: 768px) {
+  footer .right-footer-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  footer .rs-ic {
+    margin-right: 10px;
+  }
 }
 /*# sourceMappingURL=nebula.css.map */
