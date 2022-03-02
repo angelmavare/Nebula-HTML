@@ -12032,4 +12032,16 @@ footer .line-gradient-footer {
   /* background-size: cover;
         background-position: center; */
 }
+
+footer .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .right-footer-nav {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
 /*# sourceMappingURL=nebula.css.map */

@@ -362,6 +362,12 @@ footer{
         /* background-size: cover;
         background-position: center; */
     }
+    .nav-item{
+        display: flex;
+    }
+    .right-footer-nav{
+        justify-content: right;
+    }
     
 }
 
