@@ -11696,21 +11696,34 @@ fieldset:disabled .btn {
 }
 
 .btn-gradient {
+  /* background: $gradient;
+    
+    background-size: 300% 100%;
+    color: white;
+    font-weight: 500;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; */
+  background: #bdbdbd;
   background: linear-gradient(79.18deg, #49A0CE -0.43%, #7C53BE 22.82%, #C45497 50.61%, #7C53BE 73.76%, #49A0CE 98.43%);
-  background-size: 300% 100%;
+  background-size: 400% 100%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
   color: white;
-  font-weight: 500;
-  moz-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .btn-gradient:hover {
-  background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  /* background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; */
   color: white;
+  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 .link-text {
@@ -11974,8 +11987,20 @@ fieldset:disabled .btn {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 10px 10px 10px 10px;
   border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.horizontal-post-feed:hover {
+  -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.horizontal-post-feed:hover img.post-img {
+  width: 120%;
+  height: 120%;
 }
 
 .horizontal-post-feed .post-img-link {
@@ -11983,6 +12008,8 @@ fieldset:disabled .btn {
 }
 
 .horizontal-post-feed img.post-img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   border-radius: 5px 0px 0px 5px;
 }
 
