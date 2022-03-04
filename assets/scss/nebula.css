@@ -12,12 +12,6 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
   //"darkprimary":#278273
 ); */
 /* Other theme colors */
-/* $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1344px
-); */
 /* .navbar-light .navbar-toggler{
   color: black !important;
   border: none !important;
@@ -679,8 +673,7 @@ progress {
 .container-sm,
 .container-md,
 .container-lg,
-.container-xl,
-.container-xxl {
+.container-xl {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -708,13 +701,7 @@ progress {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1320px;
+    max-width: 1344px;
   }
 }
 
@@ -4285,7 +4272,7 @@ fieldset:disabled .btn {
 }
 
 .navbar > .container,
-.navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+.navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11775,7 +11762,8 @@ fieldset:disabled .btn {
 }
 
 .nebula-search:focus, .nebula-search:active {
-  color: white;
+  background: white !important;
+  color: #2c2c2c !important;
   outline: #FF5300;
   border-color: #FF5300;
   /* outline: 3px solid rgba(170, 50, 220, .6); */
@@ -11897,6 +11885,12 @@ fieldset:disabled .btn {
   top: -21px;
   position: absolute;
   right: 80px;
+}
+
+@media (max-width: 768px) {
+  .title-section .title-section-icon {
+    right: 30px;
+  }
 }
 
 .title-section .line-gradient-title {
@@ -12067,10 +12061,16 @@ footer .footer-section {
 
 footer .footer-section .card-tag-footer {
   position: absolute;
-  height: 363px;
+  height: auto;
   width: 628px;
-  top: -42px;
-  right: 0;
+  top: -40px;
+  right: 35px;
+}
+
+footer .footer-section .newsletter-section {
+  color: #ffffff;
+  padding-top: 100px;
+  text-align: center;
 }
 
 footer .copyright-section {

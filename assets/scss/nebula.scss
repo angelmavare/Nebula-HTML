@@ -127,8 +127,8 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
   }
 .nebula-search:focus, .nebula-search:active{
     //box-shadow: 0px 0px 4px $orange;
-
-    color: white;
+    background:white !important;
+    color: rgb(44, 44, 44) !important;
     outline: $orange;
     border-color: $orange;
     //border: none;
@@ -239,6 +239,9 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
         top: -21px;
         position: absolute;
         right: 80px;
+        @media (max-width: 768px){
+            right: 30px;
+        }
     }
     .line-gradient-title{
         height: 7px;
@@ -363,6 +366,7 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
 /**********************************
             FOOTER
 **********************************/
+
 footer{
 
     
@@ -377,10 +381,15 @@ footer{
         position: relative;
         .card-tag-footer{
             position: absolute;
-            height: 363px;
+            height: auto;
             width: 628px;
-            top: -42px;
-            right: 0;
+            top: -40px;
+            right: 35px;
+        }
+        .newsletter-section{
+            color: #ffffff;
+            padding-top: 100px;
+            text-align: center;
         }
     }
     .copyright-section{
