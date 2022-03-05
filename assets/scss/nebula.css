@@ -12067,6 +12067,12 @@ footer .footer-section .card-tag-footer {
   right: 35px;
 }
 
+@media (max-width: 1200px) {
+  footer .footer-section .card-tag-footer {
+    right: -50%;
+  }
+}
+
 footer .footer-section .newsletter-section {
   color: #ffffff;
   padding-top: 100px;
