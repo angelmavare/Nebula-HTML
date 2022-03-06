@@ -385,9 +385,14 @@ footer{
             width: 628px;
             top: -40px;
             right: 35px;
+            
             @media (max-width: 1200px){
-                right: -50%;
+                right: -50% !important;
             }
+            @media (max-width: 992px){
+                right: -18% !important;
+            }
+            
         }
         .newsletter-section{
             color: #ffffff;

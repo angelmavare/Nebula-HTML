@@ -12069,7 +12069,13 @@ footer .footer-section .card-tag-footer {
 
 @media (max-width: 1200px) {
   footer .footer-section .card-tag-footer {
-    right: -50%;
+    right: -50% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  footer .footer-section .card-tag-footer {
+    right: -18% !important;
   }
 }
 
