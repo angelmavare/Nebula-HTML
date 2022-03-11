@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta charset="UTF-8"> <!--?php bloginfo( 'charset' ); ?-->
+    <meta name="theme-color" content="#753BBD" />
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/scss/nebula.css">
+    <title>Single</title>
+</head>
+
+
+<body>
+    
+    <!----WRAPPER----->
+    <div class="main">
+
+        <!----NAVBAR----->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="/assets/img/pixonauta-logo-08.png" alt="Pixonauta logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline d-flex" method="get" action=""> <!-- echo home_url('/'); -->
+                            <div class="input-group">
+                                <input type="text" class="form-control nebula-search" name="s" placeholder="Search" value="" aria-label="Search">
+                                <!-- <div class="input-group-append d-flex"> -->
+                                  <button class="btn btn-secondary nebula-search-button" aria-label="Center Align" type="submit">
+                                      <i class="fas fa-search"></i>
+                                  </button>
+                               <!--  </div> -->
+                              </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </nav>
+            <div class="line-gradient"></div>
+        </header>
+        <!----END NAVBAR----->
+        <!----BANNER----->
+        <section class="banner">
+            <div class="container bg-primary" >
+
+                <div class="row single-post-banner">
+                    <div class="col-md-12 p-0">
+                        <div class="single-post-img">
+                            <picture>
+                                <img class="card-img-source" src="/assets/img/img-test-1.jpg" alt="">
+                            </picture>
+                            <div class="single-img-overlay-bg"></div>
+                            <header class="content-text">
+                                <h3 class="text-white">Some text for title</h3>
+                            </header>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+
+            </div>
+
+        </section>
+        <!----END BANNER----->
+        <!----POSTLIST----->
+        <section class="postlist">
+            <div class="container">
+                <!----TITLE SECTION BAR----->
+                <div>
+                    <div class="title-section">
+                        <img class="title-section-icon" src="/assets/img/card-gradient2.svg" alt="gradient">
+                        <div class="line-gradient-title"></div>
+                        <div class="content-title-section">
+                            <h2 class="text-white">Lo más nuevo</h2>
+                        </div>
+                    </div>
+                </div>
+                <!----END TITLE SECTION BAR----->
+
+                <div class="row">
+                    <div class="col-md-9">
+                        <!--  card -->
+                        <article class="card mb-4 horizontal-post-feed">
+                            <div class="row g-0">
+                                <div class="col-md-4 post-feed">
+                                    <a href="#" class="h-100  post-bottom-left post-top-left">
+                                        <picture>
+                                            <img class="post-img" src="/assets/img/img-test-1.jpg" alt="">
+                                        </picture>
+                                        
+                                    </a>
+
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="mb-2">
+                                            <a class="text-orange text-decoration-none" href="#">Fecha, año</a><span class="text-orange">/</span><a class="text-orange fw-bold text-decoration-none" href="#">Categoria</a>
+                                        </div>
+                                        
+                                        <a href="#" class="link-text">
+                                            <h5 class="card-title" style="text-decoration: none;">Card title</h5>
+                                        
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit longer.
+                                            </p>
+                                        </a>
+                                        <div class="ux-meta-post mt-2">
+                                            <img class="ux-profile-sm d-none d-sm-inline-block" src="/assets/img/profile.jpg" alt=""><small class="ux-post-editor"> Por <a class="link-profile" href="">Pixonauta</a></small>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <!--  end card -->
+                        <!--  card -->
+                        <article class="card mb-4 horizontal-post-feed">
+                            <div class="row g-0">
+                                <div class="col-md-4 post-feed ">
+                                    <a href="#" class="h-100 post-bottom-left post-top-left">
+                                        <picture>
+                                            <img class="post-img" src="/assets/img/img-test-1.jpg" alt="">
+                                        </picture>
+                                        
+                                    </a>
+
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="mb-2">
+                                            <a class="text-orange text-decoration-none" href="#">Fecha, año</a><span class="text-orange">/</span><a class="text-orange fw-bold text-decoration-none" href="#">Categoria</a>
+                                        </div>
+                                        
+                                        <a href="#" class="link-text">
+                                            <h5 class="card-title" style="text-decoration: none;">Card title</h5>
+                                        
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit longer.
+                                            </p>
+                                        </a>
+                                        <div class="ux-meta-post mt-2">
+                                            <img class="ux-profile-sm d-none d-sm-inline-block" src="/assets/img/profile.jpg" alt=""><small class="ux-post-editor"> Por <a class="link-profile" href="">Pixonauta</a></small>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <!--  end card -->
+                        <div class="col-md-12 text-center">
+                            <a href="#" class="btn btn-lg btn-gradient">Ver todos</a>
+                        </div>
+                    </div>
+                    <!--  SIDEBAR -->
+                    <div class="col-md-3">
+                        <aside>
+
+                        </aside>
+                    </div>
+                    <!-- END  SIDEBAR -->
+                </div>
+                
+            </div>
+
+
+
+
+        </section>
+        <!----END POSTLIST----->
+
+        <section>
+
+        </section>
+
+    </div>
+
+
+    <!----END WRAPPER----->
+
+    <footer>
+        <div class="w-100 footer-section" style="background: url('/assets/img/banner-footer.jpg');">
+            <div class="container position-relative card-newsletter-desk p-0" style="height:100px">
+                <div class="footer-overlay">
+
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6" style="z-index:10">
+                        <div class="newsletter-section">
+                            <p><strong>¿Quieres se parte de la tripulación?</strong><br>
+                                Suscribete para mantenerte informado</p>
+                                <form>
+                                    <div class="mb-3 pt-2">
+  
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico" style="max-width: 300px;margin: auto;">
+                                      
+                                    </div>
+                                    <button type="submit" class="btn btn-gradient mt-2">Me apunto</button>
+                                  </form>
+                        </div>
+                    </div>
+                </div>
+                <img class="card-tag-footer" src="/assets/img/card-footer.svg" alt="pixonauta subscribe">
+                
+            </div>
+            
+            
+        </div>
+        <div class="row w-100 copyright-section" >
+            <!-- Grid column -->
+            <div class="col-md-6">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light text-primary">
+                    
+                    <div class="w-100">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link text-primary" href="#">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-primary" href="#">Artículos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-primary" href="#">Newsletter</a>
+                        </li>
+                        <li class="nav-item">
+                           <!-- Facebook -->
+                            <a class="rs-ic fb-ic nav-link text-primary" rel="noreferrer" href="https://www.facebook.com/pixonauta/" target="_blank">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <a class="rs-ic tw-ic nav-link text-primary" target="_blank" rel="noreferrer" href="https://twitter.com/pixonauta">
+                                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <a class="rs-ic ins-ic nav-link text-primary" target="_blank" rel="noreferrer" href="https://www.instagram.com/pixonauta/">
+                                <i class="fab fa-instagram fa-lg white-text fa-2x"> </i>
+                            </a>
+                
+                        </li>
+                        
+                      </ul>
+                      
+                    </div>
+                  </nav>
+
+
+               
+            </div>
+            <!-- Grid column -->
+            
+            <div class="col-md-6">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light right-footer-nav">
+                    
+                    <div >
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <span class="navbar-text text-primary">
+                                Hecho con <i class="fa-solid fa-heart"></i> por <a href="#" class="fw-bold text-primary text-decoration-none" >Pixonauta</a>
+                            </span>
+                        </li>
+                        
+                      </ul>
+                      
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="row w-100 line-gradient-footer">
+
+        </div>
+
+    </footer>
+
+    <!---Scripts--->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+
+</html>
