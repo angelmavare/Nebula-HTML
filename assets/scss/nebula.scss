@@ -379,18 +379,41 @@ footer{
         margin: 0;
         margin-top: 65px;
         position: relative;
+        .footer-overlay{
+            height: 100%;
+            width: 100%;
+            display: none;
+            min-height: 365px;
+            background: rgba(0,0,0,0.50);
+            @media (max-width: 575px){
+                height: 100%;
+                width: 100%;
+                display: block;
+                position: absolute;
+            }
+        }
         .card-tag-footer{
             position: absolute;
             height: auto;
             width: 628px;
             top: -40px;
             right: 35px;
-            
-            @media (max-width: 1200px){
-                right: -50% !important;
+            @media (max-width: 575px){
+                display: none;
             }
-            @media (max-width: 992px){
-                right: -18% !important;
+
+            @media (min-width: 576px){
+                right: -5.5% !important;
+            }
+            @media (min-width: 768px){
+                right: 8% !important;
+            }
+            @media (min-width: 992px){
+                right: 18.5% !important;
+            }
+            @media (min-width: 1200px){
+                //right: -50% !important;
+                right: 2.5% !important;
             }
             
         }

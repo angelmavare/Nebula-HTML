@@ -12059,6 +12059,23 @@ footer .footer-section {
   position: relative;
 }
 
+footer .footer-section .footer-overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  min-height: 365px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 575px) {
+  footer .footer-section .footer-overlay {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
+}
+
 footer .footer-section .card-tag-footer {
   position: absolute;
   height: auto;
@@ -12067,15 +12084,33 @@ footer .footer-section .card-tag-footer {
   right: 35px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 575px) {
   footer .footer-section .card-tag-footer {
-    right: -50% !important;
+    display: none;
   }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 576px) {
   footer .footer-section .card-tag-footer {
-    right: -18% !important;
+    right: -5.5% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .footer-section .card-tag-footer {
+    right: 8% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .footer-section .card-tag-footer {
+    right: 18.5% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer .footer-section .card-tag-footer {
+    right: 2.5% !important;
   }
 }
 
