@@ -41,6 +41,7 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11605,6 +11606,10 @@ fieldset:disabled .btn {
 /**********************************
             GENERAL
 **********************************/
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .gradient-bg {
   background-image: linear-gradient(79.18deg, #49A0CE -0.43%, #7C53BE 22.82%, #C45497 50.61%, #7C53BE 73.76%, #49A0CE 98.43%);
   background-size: 200% 100%;
@@ -11715,6 +11720,25 @@ fieldset:disabled .btn {
 
 .link-text {
   text-decoration: none;
+}
+
+.line-gradient {
+  height: 5px;
+  background: #bdbdbd;
+  background: linear-gradient(89.99deg, #2BAACD 0.01%, #487AC4 10.6%, #7641BF 20.4%, #AE69BF 39.9%, #E6446B 50.01%, #B8519E 55.65%, #763DBE 68.52%, #487AC4 87.91%, #2BAACD 99.99%);
+  background-size: 300% 100%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  margin: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .current-menu-item .nav-link, .navbar-dark .navbar-nav .nav-link.active {
+  color: #ff7f3e !important;
 }
 
 /**********************************
