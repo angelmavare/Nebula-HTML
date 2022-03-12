@@ -365,6 +365,7 @@ body{
         border-radius: 5px 0px 0px 5px;
         @media (max-width: 768px){
             border-radius: 0px 0px 0px 0px;
+            //border-radius: 10px 10px 10px 10px;
         }
         
     }
@@ -500,11 +501,17 @@ footer{
     
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    @media (max-width: 768px){ 
+        border-radius: 0 !important;
+    }
     .single-post-img{
         min-height: 60vh;
         display: flex;
         border-radius: 10px;
         position: relative;
+        @media (max-width: 768px){ 
+            border-radius: 0 !important;
+        }
         .single-img-overlay-bg{
             background: rgba(0,0,0,0.4);
             height: 100%;
@@ -512,8 +519,12 @@ footer{
             position: absolute;
             top: 0;
             border-radius: 10px;
+            @media (max-width: 768px){ 
+                border-radius: 0 !important;
+            }
         }
         img.card-img-source{
+            
             border-radius: 10px;
             position: absolute;
             display: block;
@@ -525,6 +536,9 @@ footer{
             top: 0;
             bottom: 0;
             margin: auto;
+            @media (max-width: 768px){ 
+                border-radius: 0 !important;
+            }
         }
         header{
             align-self: center;
@@ -535,6 +549,42 @@ footer{
             box-sizing: border-box;
             width: 100%;
         }
+    }
+    
+}
+.related-post{
+    
+}
+.vertical-post-related{
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.30);
+        img.post-img{
+            width: 120%;
+            height: 120%;
+        }
+    }
+    .post-img-link{
+        border-radius: 5px 5px 5px 5px;
+    }
+    img.post-img{
+        transition: all 0.5s;
+        border-radius: 5px 5px 5px 5px;
+        
+        
+    }
+    .card-title{
+        color: #000000;
+        text-decoration: none !important;
+        text-align: center;
+    }
+    .card-text{
+        color: #000000;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     
 }

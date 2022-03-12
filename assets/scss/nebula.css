@@ -12223,6 +12223,12 @@ footer .right-footer-nav {
   border-top-right-radius: 10px;
 }
 
+@media (max-width: 768px) {
+  .single-post-banner {
+    border-radius: 0 !important;
+  }
+}
+
 .single-post-banner .single-post-img {
   min-height: 60vh;
   display: -webkit-box;
@@ -12232,6 +12238,12 @@ footer .right-footer-nav {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .single-post-banner .single-post-img {
+    border-radius: 0 !important;
+  }
+}
+
 .single-post-banner .single-post-img .single-img-overlay-bg {
   background: rgba(0, 0, 0, 0.4);
   height: 100%;
@@ -12239,6 +12251,12 @@ footer .right-footer-nav {
   position: absolute;
   top: 0;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .single-post-banner .single-post-img .single-img-overlay-bg {
+    border-radius: 0 !important;
+  }
 }
 
 .single-post-banner .single-post-img img.card-img-source {
@@ -12256,6 +12274,12 @@ footer .right-footer-nav {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .single-post-banner .single-post-img img.card-img-source {
+    border-radius: 0 !important;
+  }
+}
+
 .single-post-banner .single-post-img header {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -12267,5 +12291,46 @@ footer .right-footer-nav {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
+}
+
+.vertical-post-related {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.vertical-post-related:hover {
+  -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.vertical-post-related:hover img.post-img {
+  width: 120%;
+  height: 120%;
+}
+
+.vertical-post-related .post-img-link {
+  border-radius: 5px 5px 5px 5px;
+}
+
+.vertical-post-related img.post-img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.vertical-post-related .card-title {
+  color: #000000;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+.vertical-post-related .card-text {
+  color: #000000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /*# sourceMappingURL=nebula.css.map */
