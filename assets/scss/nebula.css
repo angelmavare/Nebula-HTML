@@ -69,12 +69,12 @@ Para Editar los estilos, buscar mediante el comando CTRL+F: "Main Styles", y edi
   --bs-orange: #FF5300;
   --bs-primary: #753BBD;
   --bs-light-orange: #ff7f3e;
-  --bs-darkprimary: #A16B00;
+  --bs-darkprimary: #280f46;
   --bs-black-rgb: 40, 39, 41;
   --bs-orange-rgb: 255, 83, 0;
   --bs-primary-rgb: 117, 59, 189;
   --bs-light-orange-rgb: 255, 127, 62;
-  --bs-darkprimary-rgb: 161, 107, 0;
+  --bs-darkprimary-rgb: 40, 15, 70;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -3400,43 +3400,43 @@ fieldset:disabled .btn {
 
 .btn-darkprimary {
   color: #fff;
-  background-color: #A16B00;
-  border-color: #A16B00;
+  background-color: #280f46;
+  border-color: #280f46;
 }
 
 .btn-darkprimary:hover {
   color: #fff;
-  background-color: #895b00;
-  border-color: #815600;
+  background-color: #220d3c;
+  border-color: #200c38;
 }
 
 .btn-check:focus + .btn-darkprimary, .btn-darkprimary:focus {
   color: #fff;
-  background-color: #895b00;
-  border-color: #815600;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(175, 129, 38, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(175, 129, 38, 0.5);
+  background-color: #220d3c;
+  border-color: #200c38;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(72, 51, 98, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(72, 51, 98, 0.5);
 }
 
 .btn-check:checked + .btn-darkprimary,
 .btn-check:active + .btn-darkprimary, .btn-darkprimary:active, .btn-darkprimary.active,
 .show > .btn-darkprimary.dropdown-toggle {
   color: #fff;
-  background-color: #815600;
-  border-color: #795000;
+  background-color: #200c38;
+  border-color: #1e0b35;
 }
 
 .btn-check:checked + .btn-darkprimary:focus,
 .btn-check:active + .btn-darkprimary:focus, .btn-darkprimary:active:focus, .btn-darkprimary.active:focus,
 .show > .btn-darkprimary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(175, 129, 38, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(175, 129, 38, 0.5);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(72, 51, 98, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(72, 51, 98, 0.5);
 }
 
 .btn-darkprimary:disabled, .btn-darkprimary.disabled {
   color: #fff;
-  background-color: #A16B00;
-  border-color: #A16B00;
+  background-color: #280f46;
+  border-color: #280f46;
 }
 
 .btn-outline-black {
@@ -3576,36 +3576,36 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-darkprimary {
-  color: #A16B00;
-  border-color: #A16B00;
+  color: #280f46;
+  border-color: #280f46;
 }
 
 .btn-outline-darkprimary:hover {
   color: #fff;
-  background-color: #A16B00;
-  border-color: #A16B00;
+  background-color: #280f46;
+  border-color: #280f46;
 }
 
 .btn-check:focus + .btn-outline-darkprimary, .btn-outline-darkprimary:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(161, 107, 0, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(161, 107, 0, 0.5);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 15, 70, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(40, 15, 70, 0.5);
 }
 
 .btn-check:checked + .btn-outline-darkprimary,
 .btn-check:active + .btn-outline-darkprimary, .btn-outline-darkprimary:active, .btn-outline-darkprimary.active, .btn-outline-darkprimary.dropdown-toggle.show {
   color: #fff;
-  background-color: #A16B00;
-  border-color: #A16B00;
+  background-color: #280f46;
+  border-color: #280f46;
 }
 
 .btn-check:checked + .btn-outline-darkprimary:focus,
 .btn-check:active + .btn-outline-darkprimary:focus, .btn-outline-darkprimary:active:focus, .btn-outline-darkprimary.active:focus, .btn-outline-darkprimary.dropdown-toggle.show:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(161, 107, 0, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(161, 107, 0, 0.5);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(40, 15, 70, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(40, 15, 70, 0.5);
 }
 
 .btn-outline-darkprimary:disabled, .btn-outline-darkprimary.disabled {
-  color: #A16B00;
+  color: #280f46;
   background-color: transparent;
 }
 
@@ -5446,13 +5446,13 @@ fieldset:disabled .btn {
 }
 
 .alert-darkprimary {
-  color: #614000;
-  background-color: #ece1cc;
-  border-color: #e3d3b3;
+  color: #18092a;
+  background-color: #d4cfda;
+  border-color: #bfb7c8;
 }
 
 .alert-darkprimary .alert-link {
-  color: #4e3300;
+  color: #130722;
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -5853,19 +5853,19 @@ fieldset:disabled .btn {
 }
 
 .list-group-item-darkprimary {
-  color: #614000;
-  background-color: #ece1cc;
+  color: #18092a;
+  background-color: #d4cfda;
 }
 
 .list-group-item-darkprimary.list-group-item-action:hover, .list-group-item-darkprimary.list-group-item-action:focus {
-  color: #614000;
-  background-color: #d4cbb8;
+  color: #18092a;
+  background-color: #bfbac4;
 }
 
 .list-group-item-darkprimary.list-group-item-action.active {
   color: #fff;
-  background-color: #614000;
-  border-color: #614000;
+  background-color: #18092a;
+  border-color: #18092a;
 }
 
 .btn-close {
@@ -7112,11 +7112,11 @@ fieldset:disabled .btn {
 }
 
 .link-darkprimary {
-  color: #A16B00;
+  color: #280f46;
 }
 
 .link-darkprimary:hover, .link-darkprimary:focus {
-  color: #815600;
+  color: #200c38;
 }
 
 .ratio {
@@ -7570,7 +7570,7 @@ fieldset:disabled .btn {
 }
 
 .border-darkprimary {
-  border-color: #A16B00 !important;
+  border-color: #280f46 !important;
 }
 
 .border-white {
@@ -11632,6 +11632,14 @@ body {
   transition: all .4s ease-in-out;
 }
 
+.gradient-bg-animation {
+  background: #bdbdbd;
+  background: linear-gradient(79.18deg, #49A0CE -0.43%, #7C53BE 22.82%, #C45497 50.61%, #7C53BE 73.76%, #49A0CE 98.43%);
+  background-size: 300% 100%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+
 .bg-gradient-animation {
   background: #bdbdbd;
   background: linear-gradient(89.99deg, #2BAACD 0.01%, #487AC4 10.6%, #7641BF 20.4%, #AE69BF 39.9%, #E6446B 50.01%, #B8519E 55.65%, #763DBE 68.52%, #487AC4 87.91%, #2BAACD 99.99%);
@@ -11723,7 +11731,7 @@ body {
 }
 
 .line-gradient {
-  height: 5px;
+  height: 1px;
   background: #bdbdbd;
   background: linear-gradient(89.99deg, #2BAACD 0.01%, #487AC4 10.6%, #7641BF 20.4%, #AE69BF 39.9%, #E6446B 50.01%, #B8519E 55.65%, #763DBE 68.52%, #487AC4 87.91%, #2BAACD 99.99%);
   background-size: 300% 100%;
@@ -11738,7 +11746,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .current-menu-item .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
-  color: #ff7f3e !important;
+  color: #FF5300 !important;
 }
 
 .navbar-toggler {
@@ -11770,7 +11778,7 @@ body {
   border-radius: 0px;
   border-right: none;
   color: white !important;
-  border-color: white;
+  border-color: #FF5300;
 }
 
 .nebula-search::-webkit-input-placeholder {
@@ -11804,8 +11812,8 @@ body {
 .nebula-search:focus, .nebula-search:active {
   background: white !important;
   color: #2c2c2c !important;
-  outline: #FF5300;
-  border-color: #FF5300;
+  outline: white;
+  border-color: white;
   /* outline: 3px solid rgba(170, 50, 220, .6); */
 }
 
@@ -11815,7 +11823,7 @@ body {
 }
 
 .nebula-search-button {
-  border: 1px solid white;
+  border: 1px solid #FF5300;
   border-left: none;
   border-radius: 0;
   background: transparent;
@@ -11833,13 +11841,20 @@ body {
   border: none !important;
 }
 
+/* .wrap-banner{
+    background-color: ;
+} */
 .banner {
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 @media (max-width: 768px) {
   .banner {
-    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -11848,7 +11863,7 @@ body {
 }
 
 .banner .container .principal-card-row {
-  min-height: 60vh;
+  min-height: 55vh;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -11889,7 +11904,7 @@ body {
 }
 
 .banner .container .secondary-card-row {
-  min-height: 40vh;
+  min-height: 25vh;
 }
 
 .banner .container .secondary-card-row .secondary-card-text {
@@ -11984,8 +11999,8 @@ body {
   display: block;
   position: relative;
   width: 100%;
-  padding: 66.25% 0 0 0;
   overflow: hidden;
+  padding: 50% 0 0 0;
 }
 
 .post-feed a img {
@@ -12039,6 +12054,10 @@ body {
 
 .horizontal-post-feed .post-img-link {
   border-radius: 10px 10px 10px 10px;
+}
+
+.horizontal-post-feed .post-feed a {
+  padding: 66.25% 0 0 0;
 }
 
 .horizontal-post-feed img.post-img {
