@@ -52,7 +52,26 @@ body{
     background-size: 300% 100%;
     animation: gradient 15s ease infinite;
 }
-
+.banner-gradient{
+    position: relative;
+    background: black;
+}
+/* .banner-gradient:before{
+    content: '';
+    background-image: $gradient;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background-size: 400%;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    filter: blur(5px);
+} */
+/* .banner-gradient:after{
+    filter: blur(20px);
+} */
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -63,6 +82,22 @@ body{
     100% {
         background-position: 0% 50%;
     }
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 300% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.dark-primary-gradient-bg{
+    background: $darkprimary-gradient;
 }
 .overlay-bg{
     //background:rgba(0,0,0,0.5); 
@@ -204,7 +239,20 @@ body{
 /* .wrap-banner{
     background-color: ;
 } */
-
+.category-tags{
+    color: $orange;
+    a{
+        color: $orange;
+        &:hover{
+            color: $light-orange;
+        }
+    }
+    .title-category-tags{
+        /* font-weight: 700;
+        font-size: 1.2em; */
+        text-transform: uppercase;
+    }
+}
 .banner{
     //margin-top: 30px;
     padding-top: 30px;
@@ -212,7 +260,7 @@ body{
     background-repeat: no-repeat !important;
     background-size: cover !important; 
     @media (max-width: 768px){
-        padding-top: 30px;
+        padding-top: 0px;
         padding-bottom: 30px;
     }
    
@@ -223,11 +271,18 @@ body{
             min-height: 55vh;
             border-top-left-radius: 10px;
             border-top-right-radius:10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius:10px;
             .principal-card-text{
                 display: flex;
                 padding: 30px;
                 border-top-right-radius:10px;
+                border-bottom-right-radius:10px;
                 justify-content: center;
+                @media (max-width: 768px){
+                    border-top-right-radius:0px;
+                    border-bottom-right-radius:0px;
+                }
                 .content-text{
                     align-self: center;
                     text-decoration: none;
@@ -264,13 +319,52 @@ body{
                     align-self: flex-end;
                 }
             }
+            .secondary-card-text:nth-child(1){
+                padding-top: 10px;
+                padding-right: 5px;
+                @media (max-width: 768px){
+                    padding-right: 5px;
+                    padding-left: 5px;
+                }
+                a{
+                    border-radius: 10px;
+                }
+            }
+            .secondary-card-text:nth-child(2){
+                padding-top: 10px;
+                padding-right: 5px;
+                padding-left: 5px;
+                a{
+                    border-radius: 10px;
+                }
+            }
+            .secondary-card-text:nth-child(3){
+                padding-top: 10px;
+                //padding-right: 5px;
+                padding-left: 5px;
+                @media (max-width: 768px){
+                    padding-right: 5px;
+                    padding-left: 5px;
+                }
+                a{
+                    border-radius: 10px;
+                }
+            }
         }
     }
     
 
 }
 
-
+/* .banner:before{
+    background: $darkprimary;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -999;
+} */
 
 
 /**********************************
@@ -318,6 +412,18 @@ body{
         border-bottom-right-radius:10px;
         @media (max-width: 768px){
             border-bottom-right-radius:0px;
+        }
+    }
+    .post-top-right img, .post-top-right{
+        border-top-right-radius:10px;
+        @media (max-width: 768px){
+            border-top-right-radius:0px;
+        }
+    }
+    .post-top-right img, .post-top-right{
+        border-top-right-radius:10px;
+        @media (max-width: 768px){
+            border-top-right-radius:0px;
         }
     }
     .post-top-left img, .post-top-left{
@@ -399,8 +505,10 @@ body{
     
 }
 .ux-profile-sm{
-    width: 30px;
+    width: 30px !important;
     border-radius: 50px;
+    height: 30px !important;
+    position: relative !important;
 }
 .link-profile{
     color: #000000;
